@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>START - Space Travel Analog Research Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .menu {
+            background-color: #333;
+            padding: 10px;
+        }
+        .menu button {
+            background: none;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .menu-content {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>Space Travel Analog Research Team (START)</header>
+    <div class="menu">
+        <button onclick="toggleMenu('about')">About the Team</button>
+        <button onclick="toggleMenu('mission')">This Year’s Mission</button>
+        <button onclick="toggleMenu('payload')">Our Payload</button>
+        <button onclick="toggleMenu('outreach')">Community Outreach</button>
+        <button onclick="toggleMenu('sponsors')">Sponsors</button>
+    </div>
+    
+    <div id="about" class="menu-content">
+        <h2>The Team</h2>
+        <p>START is a team of University of Toronto students participating in the 2024/2025 Canadian Stratospheric Balloon Experiment Design Challenge.</p>
+    </div>
+    
+    <div id="mission" class="menu-content">
+        <h2>This Year’s Mission</h2>
+        <p>Our design aims to expose human cells to radiation at high altitudes, offering research opportunities on Galactic Cosmic Rays.</p>
+    </div>
+    
+    <div id="payload" class="menu-content">
+        <h2>Our Payload</h2>
+        <p>Includes gas-tight trays to maintain pressure and a temperature control chamber set at 37°C.</p>
+    </div>
+    
+    <div id="outreach" class="menu-content">
+        <h2>Community Outreach</h2>
+        <p>We hosted a workshop at the National Society of Black Engineers’ Annual High School Conference.</p>
+    </div>
+    
+    <div id="sponsors" class="menu-content">
+        <h2>Sponsors</h2>
+        <p>Join our current sponsors: GHGSAT, University of Toronto Engineering Society, and more.</p>
+    </div>
+    
+    <script>
+        function toggleMenu(section) {
+            let content = document.getElementById(section);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
